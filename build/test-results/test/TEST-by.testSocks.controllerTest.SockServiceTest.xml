@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="by.testSocks.controllerTest.SockServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-12-20T11:50:35" hostname="DESKTOP-QKG0F7N" time="1.767">
+  <properties/>
+  <testcase name="testUpdateSock_SockDoesNotExist_ThrowsException()" classname="by.testSocks.controllerTest.SockServiceTest" time="1.65"/>
+  <testcase name="testAddIncome_SockDoesNotExist_CreatesNewSock()" classname="by.testSocks.controllerTest.SockServiceTest" time="0.048"/>
+  <testcase name="testAddOutcome_SufficientQuantity_UpdatesQuantity()" classname="by.testSocks.controllerTest.SockServiceTest" time="0.012"/>
+  <testcase name="testAddOutcome_InsufficientQuantity_ThrowsException()" classname="by.testSocks.controllerTest.SockServiceTest" time="0.013"/>
+  <testcase name="testUpdateSock_SockExists_UpdatesSock()" classname="by.testSocks.controllerTest.SockServiceTest" time="0.027"/>
+  <testcase name="testAddIncome_SockExists_UpdatesQuantity()" classname="by.testSocks.controllerTest.SockServiceTest" time="0.01"/>
+  <system-out><![CDATA[14:50:36.941 [Test worker] INFO by.testSocks.service.SockService - Sock by.testSocks.entity.Sock@6bf13698 not found
+14:50:36.983 [Test worker] INFO by.testSocks.service.SockService - Updated sock: by.testSocks.entity.Sock@373f7450. New quantity: 2
+14:50:36.991 [Test worker] INFO by.testSocks.service.SockService - Insufficient quantity of sock. Requested: 3, Available: 2
+14:50:37.022 [Test worker] INFO by.testSocks.service.SockService - Носок1обновлен
+14:50:37.035 [Test worker] INFO by.testSocks.service.SockService - Sock by.testSocks.entity.Sock@68217d41 found and updated
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

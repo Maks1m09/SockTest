@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: SOCKS API
+  version: 1.0.0
+paths:
+  /api/socks/income:
+    post:
+      summary: "Регистрация прихода носков"
+      description: "API позволяет зарегистрировать приход носков."
+      responses:
+        '200':
+          description: "Успешный ответ"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Sock'
+components:
+  schemas:
+    Sock:
+      type: object
+      properties:
+        color:
+          type: string
+          description: "Цвет носка"
+        cottonPercentage:
+          type: number
+          format: double
+          description: "Процент хлопка в носке"
+        quantity:
+          type: integer
+          description: "Количество носков"
